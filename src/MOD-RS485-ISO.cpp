@@ -131,7 +131,7 @@ void MOD_RS485_ISO::setBaudrate(baudrate_t baud)
  */
 MOD_RS485_ISO::baudrate_t MOD_RS485_ISO::getBaudrate(void)
 {
-    return __readRegister(REGISTER_BR);
+    return (baudrate_t)__readRegister(REGISTER_BR);
 }
 
 /**
